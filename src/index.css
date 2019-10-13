@@ -1,0 +1,28 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+    /*Generated with https://cssgradient.io/ */
+    background: rgb(8, 2, 128);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,111,121,1) 9%, rgba(26,129,143,1) 71%, rgba(0,212,255,1) 100%);
+}
+.app-root {
+    color: white;
+    /* This makes the app-root <div> a flexbox container
+    as described here: https://www.w3schools.com/csS/css3_flexbox.asp*/
+    display: flex;
+    flex-direction: horizontal;
+}
+.date-box {
+    order: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.habit-chain {
+    order: 2;
+    color: white;
+}
+.header {
+    order: 1;
+    color: white;
+}
