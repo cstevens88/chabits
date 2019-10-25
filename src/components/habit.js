@@ -9,7 +9,7 @@ export default class Habit extends React.Component {
     }
 
 componentDidMount() {
-    fetch('http://18.224.27.43:3000/chains')
+    fetch('http://18.220.128.197:3000/chains')
     .then(response => response.json())
     .then(data => this.setState({data}));
 }

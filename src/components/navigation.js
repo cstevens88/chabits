@@ -8,7 +8,7 @@ export default class Navigation extends React.Component {
     }
 
 componentDidMount() {
-    fetch('http://18.224.27.43:3000/users/4')
+    fetch('http://18.220.128.197:3000/users/4')
     .then(response => response.json())
     .then(data => this.setState({data}));
 }
@@ -20,6 +20,7 @@ componentDidMount() {
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <Nav.Link href="#home">{this.state.data.map(user =><div key={user.id}>{user.username}</div>)}</Nav.Link>
+                    <Nav.Link href="#addhabit">add habit</Nav.Link>
                     <Nav.Link href="#logout">logout</Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
