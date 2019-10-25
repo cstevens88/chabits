@@ -1,17 +1,22 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
+import React from 'react';
+import Navigation from './components/navigation';
+import Habit from './components/habit';
 
 
 class App extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-        }
-    }
+        state = {
+            data: [],
+        };
     render() {
-        return ();
+    return (
+        <div>
+        <Navigation>
+        </Navigation>
+        <Habit></Habit>
+        </div>
+    );
     }
 }
-
 ReactDOM.render(<App />,
     document.getElementById('root'));
